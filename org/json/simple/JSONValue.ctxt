@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=JSONValue
+comment0.text=\r\n\ @author\ FangYidong<fangyidong@yahoo.com.cn>\r\n
+comment1.params=in
+comment1.target=java.lang.Object\ parse(java.io.Reader)
+comment1.text=\r\n\ Parse\ JSON\ text\ into\ java\ object\ from\ the\ input\ source.\ \r\n\ Please\ use\ parseWithException()\ if\ you\ don't\ want\ to\ ignore\ the\ exception.\r\n\ \r\n\ @see\ org.json.simple.parser.JSONParser\#parse(Reader)\r\n\ @see\ \#parseWithException(Reader)\r\n\ \r\n\ @param\ in\r\n\ @return\ Instance\ of\ the\ following\:\r\n\torg.json.simple.JSONObject,\r\n\ \torg.json.simple.JSONArray,\r\n\ \tjava.lang.String,\r\n\ \tjava.lang.Number,\r\n\ \tjava.lang.Boolean,\r\n\ \tnull\r\n\ \r\n\ @deprecated\ this\ method\ may\ throw\ an\ {@code\ Error}\ instead\ of\ returning\r\n\ {@code\ null};\ please\ use\ {@link\ JSONValue\#parseWithException(Reader)}\r\n\ instead\r\n
+comment2.params=s
+comment2.target=java.lang.Object\ parse(java.lang.String)
+comment2.text=\r\n\ Parse\ JSON\ text\ into\ java\ object\ from\ the\ given\ string.\ \r\n\ Please\ use\ parseWithException()\ if\ you\ don't\ want\ to\ ignore\ the\ exception.\r\n\ \r\n\ @see\ org.json.simple.parser.JSONParser\#parse(Reader)\r\n\ @see\ \#parseWithException(Reader)\r\n\ \r\n\ @param\ s\r\n\ @return\ Instance\ of\ the\ following\:\r\n\torg.json.simple.JSONObject,\r\n\ \torg.json.simple.JSONArray,\r\n\ \tjava.lang.String,\r\n\ \tjava.lang.Number,\r\n\ \tjava.lang.Boolean,\r\n\ \tnull\r\n\ \r\n\ @deprecated\ this\ method\ may\ throw\ an\ {@code\ Error}\ instead\ of\ returning\r\n\ {@code\ null};\ please\ use\ {@link\ JSONValue\#parseWithException(String)}\r\n\ instead\r\n
+comment3.params=in
+comment3.target=java.lang.Object\ parseWithException(java.io.Reader)
+comment3.text=\r\n\ Parse\ JSON\ text\ into\ java\ object\ from\ the\ input\ source.\r\n\ \r\n\ @see\ org.json.simple.parser.JSONParser\r\n\ \r\n\ @param\ in\r\n\ @return\ Instance\ of\ the\ following\:\r\n\ \torg.json.simple.JSONObject,\r\n\ \torg.json.simple.JSONArray,\r\n\ \tjava.lang.String,\r\n\ \tjava.lang.Number,\r\n\ \tjava.lang.Boolean,\r\n\ \tnull\r\n\ \r\n\ @throws\ IOException\r\n\ @throws\ ParseException\r\n
+comment4.params=s
+comment4.target=java.lang.Object\ parseWithException(java.lang.String)
+comment5.params=value\ out
+comment5.target=void\ writeJSONString(java.lang.Object,\ java.io.Writer)
+comment5.text=\r\n\ Encode\ an\ object\ into\ JSON\ text\ and\ write\ it\ to\ out.\r\n\ <p>\r\n\ If\ this\ object\ is\ a\ Map\ or\ a\ List,\ and\ it's\ also\ a\ JSONStreamAware\ or\ a\ JSONAware,\ JSONStreamAware\ or\ JSONAware\ will\ be\ considered\ firstly.\r\n\ <p>\r\n\ DO\ NOT\ call\ this\ method\ from\ writeJSONString(Writer)\ of\ a\ class\ that\ implements\ both\ JSONStreamAware\ and\ (Map\ or\ List)\ with\ \r\n\ "this"\ as\ the\ first\ parameter,\ use\ JSONObject.writeJSONString(Map,\ Writer)\ or\ JSONArray.writeJSONString(List,\ Writer)\ instead.\ \r\n\ \r\n\ @see\ org.json.simple.JSONObject\#writeJSONString(Map,\ Writer)\r\n\ @see\ org.json.simple.JSONArray\#writeJSONString(List,\ Writer)\r\n\ \r\n\ @param\ value\r\n\ @param\ writer\r\n
+comment6.params=value
+comment6.target=java.lang.String\ toJSONString(java.lang.Object)
+comment6.text=\r\n\ Convert\ an\ object\ to\ JSON\ text.\r\n\ <p>\r\n\ If\ this\ object\ is\ a\ Map\ or\ a\ List,\ and\ it's\ also\ a\ JSONAware,\ JSONAware\ will\ be\ considered\ firstly.\r\n\ <p>\r\n\ DO\ NOT\ call\ this\ method\ from\ toJSONString()\ of\ a\ class\ that\ implements\ both\ JSONAware\ and\ Map\ or\ List\ with\ \r\n\ "this"\ as\ the\ parameter,\ use\ JSONObject.toJSONString(Map)\ or\ JSONArray.toJSONString(List)\ instead.\ \r\n\ \r\n\ @see\ org.json.simple.JSONObject\#toJSONString(Map)\r\n\ @see\ org.json.simple.JSONArray\#toJSONString(List)\r\n\ \r\n\ @param\ value\r\n\ @return\ JSON\ text,\ or\ "null"\ if\ value\ is\ null\ or\ it's\ an\ NaN\ or\ an\ INF\ number.\r\n
+comment7.params=s
+comment7.target=java.lang.String\ escape(java.lang.String)
+comment7.text=\r\n\ Escape\ quotes,\ \\,\ /,\ \\r,\ \\n,\ \\b,\ \\f,\ \\t\ and\ other\ control\ characters\ (U+0000\ through\ U+001F).\r\n\ @param\ s\r\n\ @return\r\n
+comment8.params=s\ sb
+comment8.target=void\ escape(java.lang.String,\ java.lang.StringBuffer)
+comment8.text=\r\n\ @param\ s\ -\ Must\ not\ be\ null.\r\n\ @param\ sb\r\n
+numComments=9

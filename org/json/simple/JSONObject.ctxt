@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=JSONObject
+comment0.text=\r\n\ A\ JSON\ object.\ Key\ value\ pairs\ are\ unordered.\ JSONObject\ supports\ java.util.Map\ interface.\r\n\ \r\n\ @author\ FangYidong<fangyidong@yahoo.com.cn>\r\n
+comment1.params=
+comment1.target=JSONObject()
+comment2.params=map
+comment2.target=JSONObject(java.util.Map)
+comment2.text=\r\n\ Allows\ creation\ of\ a\ JSONObject\ from\ a\ Map.\ After\ that,\ both\ the\r\n\ generated\ JSONObject\ and\ the\ Map\ can\ be\ modified\ independently.\r\n\ \r\n\ @param\ map\r\n
+comment3.params=map\ out
+comment3.target=void\ writeJSONString(java.util.Map,\ java.io.Writer)
+comment3.text=\r\n\ Encode\ a\ map\ into\ JSON\ text\ and\ write\ it\ to\ out.\r\n\ If\ this\ map\ is\ also\ a\ JSONAware\ or\ JSONStreamAware,\ JSONAware\ or\ JSONStreamAware\ specific\ behaviours\ will\ be\ ignored\ at\ this\ top\ level.\r\n\ \r\n\ @see\ org.json.simple.JSONValue\#writeJSONString(Object,\ Writer)\r\n\ \r\n\ @param\ map\r\n\ @param\ out\r\n
+comment4.params=out
+comment4.target=void\ writeJSONString(java.io.Writer)
+comment5.params=map
+comment5.target=java.lang.String\ toJSONString(java.util.Map)
+comment5.text=\r\n\ Convert\ a\ map\ to\ JSON\ text.\ The\ result\ is\ a\ JSON\ object.\ \r\n\ If\ this\ map\ is\ also\ a\ JSONAware,\ JSONAware\ specific\ behaviours\ will\ be\ omitted\ at\ this\ top\ level.\r\n\ \r\n\ @see\ org.json.simple.JSONValue\#toJSONString(Object)\r\n\ \r\n\ @param\ map\r\n\ @return\ JSON\ text,\ or\ "null"\ if\ map\ is\ null.\r\n
+comment6.params=
+comment6.target=java.lang.String\ toJSONString()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment8.params=key\ value
+comment8.target=java.lang.String\ toString(java.lang.String,\ java.lang.Object)
+comment9.params=s
+comment9.target=java.lang.String\ escape(java.lang.String)
+comment9.text=\r\n\ Escape\ quotes,\ \\,\ /,\ \\r,\ \\n,\ \\b,\ \\f,\ \\t\ and\ other\ control\ characters\ (U+0000\ through\ U+001F).\r\n\ It's\ the\ same\ as\ JSONValue.escape()\ only\ for\ compatibility\ here.\r\n\ \r\n\ @see\ org.json.simple.JSONValue\#escape(String)\r\n\ \r\n\ @param\ s\r\n\ @return\r\n
+numComments=10
