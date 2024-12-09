@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.json.simple"},{"l":"org.json.simple.parser"}];updateSearchResults();
