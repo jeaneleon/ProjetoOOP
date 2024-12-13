@@ -4,13 +4,6 @@ public class Produto {
     private String descricao;
     private double precoBase;
 
-    public Produto(int id, String nome, String descricao, double precoBase) {
-        this.id = id;
-        this.nome = nome;
-        this.descricao = descricao;
-        this.precoBase = precoBase;
-    }
-
     public int getId() {
         return id;
     }

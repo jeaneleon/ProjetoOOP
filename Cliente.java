@@ -1,33 +1,17 @@
-
-/**
- * Write a description of class Cliente here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Cliente
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Cliente
-     */
-    public Cliente()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+public class Cliente {
+    
+    private long id;
+    private String nome;
+    private String dataNascimento;
+    private long cpf;
+    private String endereco;
+    
+    
+    public void setId(long id) {this.id = id;}
+    public void setNome(String nome) {this.nome = nome;}
+    public void setDataNascimento(String dataNascimento) {this.dataNascimento = dataNascimento;}
+    public void setCpf(long cpf) {this.cpf = cpf;}
+    public void setEndereco(String endereco) {this.endereco = endereco;}
+    
+    public long getId() {return this.id;}
 }

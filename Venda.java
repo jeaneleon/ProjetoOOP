@@ -13,7 +13,7 @@ public class Venda {
         
         double total = 0;
         
-        for(ItemVenda item : itens) total += item.getPreco();
+        //for(ItemVenda item : itens) total += item.getPreco();
         
         return total;
     }

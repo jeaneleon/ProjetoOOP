@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Atendimento
+comment1.params=id
+comment1.target=void\ setId(long)
+comment2.params=c
+comment2.target=void\ setCliente(Cliente)
+comment3.params=atendente
+comment3.target=void\ setAtendente(Atendente)
+comment4.params=status
+comment4.target=void\ setStatus(java.lang.String)
+comment5.params=
+comment5.target=long\ getId()
+comment6.params=
+comment6.target=java.lang.String\ getStatus()
+numComments=7

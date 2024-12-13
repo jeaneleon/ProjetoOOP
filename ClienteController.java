@@ -1,14 +1,46 @@
-
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Random;
 
 public class ClienteController {
     
-    public void cadastrarClient(Cliente cliente) {}
+    public List<Cliente> clientes = new ArrayList<Cliente>();
     
-    public void buscarCliente() {}
+    private static ClienteController instancia;
     
-    public void modificarCliente(Cliente alterado, Cliente atual) {}
+    private ClienteController() {}
     
-    //Só adicionar uma tag de deletado, e não de fato remover
-    public void deletarClient(String motivo) {}
+    public static ClienteController getInstancia() {
+        
+        if(instancia == null) instancia = new ClienteController();
+        
+        return instancia;
+    }
+    
+    public Cliente cadastrarCliente(String nome, String dataNascimento, long cpf, String endereco) {
+        
+        Random rand = new Random();
+        
+        Cliente c = new Cliente();
+        
+        c.setId(rand.nextLong(100000));
+        c.setNome(nome);
+        c.setDataNascimento(dataNascimento);
+        c.setCpf(cpf);
+        c.setEndereco(endereco);
+        
+        clientes.add(c);
+        
+        return c;
+    }
+    
+    public Cliente buscarCliente(long id) {
+        
+        Cliente encontrado = null;
+        
+        for(Cliente buscado : clientes) if(buscado.getId() == id) encontrado = buscado;
+        
+        return encontrado;
+    }
     
 }

@@ -11,7 +11,7 @@ public class Main {
         
         JSONObject json = new JSONObject();
         
-        JSONHandler handler = new JSONHandler();
+        JSONController handler = new JSONController();
         
         /**JSONArray array = new JSONArray();
         

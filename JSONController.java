@@ -9,6 +9,17 @@ import java.io.IOException;
 
 public class JSONController {
     
+    private static JSONController instancia;
+    
+    public JSONController() {}
+    
+    public static JSONController getInstancia() {
+        
+        if(instancia == null) instancia = new JSONController();
+        
+        return instancia;
+    }
+    
     public JSONObject locate(Object criteria, String doc) {
         
         if(criteria instanceof String) return locateNome((String) criteria, doc);
